@@ -1,5 +1,5 @@
 resource "aws_s3_bucket_object" "object" {
   bucket  = "${var.bucket}"
-  key     = "${var.prefix}${var.sandbox_id}.json"
-  content = "['Jenkins', 'Linux', 'Docker', 'Gamal', 'Python']"
+  key     = "${var.sandbox_id}.json"
+  content = "[\"${var.item1}\", \"${var.item2}\", \"${var.item3}\"]"
 }
