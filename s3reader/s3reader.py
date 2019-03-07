@@ -13,10 +13,7 @@ class Handlr(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path == "/health-check":
-            self._set_headers()
-            return
-        elif self.path == "/":
+        if self.path == "/":
             try:
                 s3 = boto3.resource('s3')
                 obj = s3.Object(os.environ['bucket'], "{}.json".format(os.environ['SANDBOX_ID']))
