@@ -19,7 +19,7 @@ class Handlr(BaseHTTPRequestHandler):
         elif self.path == "/":
             try:
                 s3 = boto3.resource('s3')
-                obj = s3.Object(os.environ['bucket'], os.environ['SANDBOX_ID'])
+                obj = s3.Object(os.environ['bucket'], "{}.json".format(os.environ['SANDBOX_ID']))
                 body = obj.get()['Body'].read().decode("UTF-8").strip()
 
                 self.send_response(200)
