@@ -1,4 +1,4 @@
-provider "aws" { }
+provider "aws" {}
 resource "aws_s3_bucket_object" "object" {
   bucket  = "${var.bucket}"
   key     = "${var.SANDBOX_ID}.json"
