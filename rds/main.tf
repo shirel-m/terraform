@@ -6,7 +6,7 @@ resource "aws_db_instance" "default" {
   engine               = "mysql"
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
-  name                 = "${var.DB_NAME}-${var.SANDBOX_ID}"
+  name                 = "${var.DB_NAME}"
   username             = "${var.DB_USER}"
   password             = "${var.DB_PASS}"
   parameter_group_name = "default.mysql5.7"
