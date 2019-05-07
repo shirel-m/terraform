@@ -1,7 +1,5 @@
 provider "aws" {}
-data "aws_region" "current" {
-  provider = "aws.region"
-}
+data "aws_region" "current" {}
 resource "aws_s3_bucket_object" "object" {
   bucket  = "${var.bucket}"
   key     = "${var.SANDBOX_ID}.json"
