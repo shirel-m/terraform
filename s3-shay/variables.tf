@@ -1,5 +1,3 @@
-variable "bucket" {}
+variable "BUCKET_NAME" {}
 variable "SANDBOX_ID" {}
-variable "SANDBOX_DNS" {}
-variable "Constant" {}
-variable "Other" {}
+variable "CONTENT" {}
