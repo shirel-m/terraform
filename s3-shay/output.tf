@@ -1,3 +1,3 @@
 output "other_variable_value" {
-  value = "${var.Content}"
+  value = "${var.CONTENT}"
 }
