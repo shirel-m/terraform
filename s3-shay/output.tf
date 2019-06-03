@@ -38,5 +38,3 @@ output "output_obj" {
     ]
   }
 }
-
-
