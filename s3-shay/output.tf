@@ -19,21 +19,21 @@ output "list_str" {
 
 output "map" {
   value = {
-      "user-a": "a-topic",
-      "user-b": "c-topic",
-      "user-c": "c-topic"
+      "user-a" = "a-topic",
+      "user-b" = "c-topic",
+      "user-c" = "c-topic"
   }
 }
 
 output "obj" {
   value = {
-    "age": 52,
-    "name": "John",
-    "user": [
+    "age" = 52,
+    "name" = "John",
+    "user" = [
       {
-        "user-a": "a-topic",
-        "user-b": "c-topic",
-        "user-c": "c-topic"
+        "user-a" = "a-topic",
+        "user-b" = "c-topic",
+        "user-c" = "c-topic"
       }
     ]
   }
@@ -41,7 +41,7 @@ output "obj" {
 
 output "map_internal_only" {
   value = {
-      "user-y": "y-topic"
+      "user-y" = "y-topic"
   }
 }
 
