@@ -34,6 +34,6 @@ variable "obj" {
         "user-c" = "c-topic"
       }
     ],
-    "data" = "!@#$@#%#$^!!~!~!@#$!#~~~##$#$%^&*(&*()sadf\nAFSDRFQW SDFSDF sdfrttt{}|||\\\xx\\asd\\'''''df'"
+    "data" = "!@#$@#%#$^!!~!~!@#$!#~~~##$#$%^&*(&*()sadf\nAFSDRFQW SDFSDF sdfrttt{}|||'''''df'"
   }
 }
