@@ -33,6 +33,7 @@ variable "obj" {
         "user-b" = "c-topic",
         "user-c" = "c-topic"
       }
-    ]
+    ],
+    "data" = "!@#$@#%#$^!!~!~!@#$!#~~~##$#$%^&*(&*()sadf\nAFSDRFQW SDFSDF sdfrttt{}|||\\\xx\\asd\\'''''df'"
   }
 }
