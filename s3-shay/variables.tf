@@ -4,27 +4,28 @@ variable "CONTENT" {}
 
 
 variable "str" {
-  type = string
+  type = "string"
+  default = "some text"
 }
 
 variable "num" {
-  type = number
+  type = "number"
   default = 100
 }
 
 variable "boolean" {
-  type = bool
+  type = "bool"
   default = true
 }
 
 
 variable "list_str" {
-  type    = list(string)
+  type    = "list(string)"
   default = ["a", "b", "c"]
 }
 
 variable "list_numbers" {
-  type    = list(number)
+  type    = "list(number)"
   default = [1,2,3]
 }
 
