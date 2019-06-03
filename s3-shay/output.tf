@@ -3,45 +3,34 @@ output "from_content_variable" {
 }
 
 output "str" {
-  value = "text"
+  value = "${var.str}"
 }
 
 output "num" {
-  value = 100
+ value = "${var.num}"
+}
+
+output "boolean" {
+ value = "${var.boolean}"
+}
+
+output "list_str" {
+  value = "${var.list_str}"
 }
 
 output "list_numbers" {
-  value = [1, 2, 3]
-}
-output "list_str" {
-  value = ["a", "b", "c"]
+  value = "${var.list_numbers}"
 }
 
 output "map" {
-  value = {
-      "user-a" = "a-topic",
-      "user-b" = "c-topic",
-      "user-c" = "c-topic"
-  }
+  value = "${var.map}"
 }
 
 output "obj" {
-  value = {
-    "age" = 52,
-    "name" = "John",
-    "user" = [
-      {
-        "user-a" = "a-topic",
-        "user-b" = "c-topic",
-        "user-c" = "c-topic"
-      }
-    ]
-  }
+   value = "${var.obj}"
 }
 
 output "map_internal_only" {
-  value = {
-      "user-y" = "y-topic"
-  }
+  value = "some value"
 }
 
