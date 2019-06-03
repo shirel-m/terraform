@@ -8,25 +8,9 @@ variable "str" {
   default = "some text"
 }
 
-variable "num" {
-  type = "number"
-  default = 100
-}
-
-variable "boolean" {
-  type = "bool"
-  default = true
-}
-
-
-variable "list_str" {
-  type    = "list(string)"
+variable "list" {
+  type    = "list"
   default = ["a", "b", "c"]
-}
-
-variable "list_numbers" {
-  type    = "list(number)"
-  default = [1,2,3]
 }
 
 variable "map" {
@@ -39,7 +23,7 @@ variable "map" {
 }
 
 variable "obj" {
-  type = "object"
+  type = "map"
   default = {
     "age" = 52,
     "name" = "John",
