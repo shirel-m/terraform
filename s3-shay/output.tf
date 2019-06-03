@@ -1,23 +1,23 @@
-output "output_from_content_variable" {
+output "from_content_variable" {
   value = "${var.CONTENT}"
 }
 
-output "output_str" {
+output "str" {
   value = "text"
 }
 
-output "output_num" {
+output "num" {
   value = 100
 }
 
-output "output_list_numbers" {
+output "list_numbers" {
   value = [1, 2, 3]
 }
-output "output_list_str" {
+output "list_str" {
   value = ["a", "b", "c"]
 }
 
-output "output_map" {
+output "map" {
   value = {
       "user-a": "a-topic",
       "user-b": "c-topic",
@@ -25,7 +25,7 @@ output "output_map" {
   }
 }
 
-output "output_obj" {
+output "obj" {
   value = {
     "age": 52,
     "name": "John",
@@ -39,7 +39,7 @@ output "output_obj" {
   }
 }
 
-output "output_map_internal_only" {
+output "map_internal_only" {
   value = {
       "user-y": "y-topic"
   }
