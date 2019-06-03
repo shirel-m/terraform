@@ -38,3 +38,10 @@ output "output_obj" {
     ]
   }
 }
+
+output "output_map_internal_only" {
+  value = {
+      "user-y": "y-topic"
+  }
+}
+
