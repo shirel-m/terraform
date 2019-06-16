@@ -2,6 +2,8 @@ variable "BUCKET_NAME" {}
 variable "SANDBOX_ID" {}
 variable "CONTENT" {}
 
+variable "FROM_PUBLISHER_1" {}
+variable "FROM_PUBLISHER_2" {}
 
 variable "str" {
   type = "string"
