@@ -1,6 +1,16 @@
-output "output1" {
-  value = "service output value:  output1"
+output "str" {
+  value = "${var.str}"
 }
-output "output2" {
-  value = "service output value:  output2"
+
+output "list" {
+  value = "${var.list}"
 }
+
+output "map" {
+  value = "${var.map}"
+}
+
+output "obj" {
+   value = "${var.obj}"
+}
+
