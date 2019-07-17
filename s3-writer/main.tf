@@ -10,5 +10,8 @@ resource "aws_s3_bucket_object" "object" {
 
 data "external" "presign" {
   program = ["bash", "presign.sh", "${var.BUCKET_NAME}", "${var.SANDBOX_ID}"]
-  depends_on = ["aws_s3_bucket_object.object"]
+}
+
+output "s3_file_url" {
+  value = "${data.external.presign.result.url}"
 }
