@@ -29,6 +29,6 @@ variable "obj" {
         "user-c" = "c-topic"
       }
     ],
-  "data" = "a\"b"
-  }
+    "data" = "/!@#$@#%#$^!!~///!~\"!@#$!#~~~//##\\$\\#$%^&*(&*()sa\\df\nAFSDRFQW1'2''3'''4''''SDFSDF\\sdfrt\\\tt{}|||'''''df'"
+  }           
 }
