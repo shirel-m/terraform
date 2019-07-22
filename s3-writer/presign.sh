@@ -1,6 +1,6 @@
 #!/bin/bash
 export AWS_DEFAULT_REGION='eu-west-1'
-if [ ! -z "$4" ]; then
+if [ "$3" != 'none']; then
     access_key="$3"
     secret_key="$4"
     export AWS_ACCESS_KEY_ID="$3"
