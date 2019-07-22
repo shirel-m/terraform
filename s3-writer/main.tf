@@ -11,7 +11,7 @@ resource "aws_s3_bucket_object" "object" {
 }
 
 data "external" "presign" {
-  program = ["bash", "presign.sh", "${var.BUCKET_NAME}", "${var.SANDBOX_ID}"]
+  program = ["bash", "presign.sh", "${var.BUCKET_NAME}", "${var.SANDBOX_ID}", "${var.AWS_ACCESS_KEY}", "${var.AWS_SECRET_ACCESS}"]
 }
 
 output "s3_file_url" {
