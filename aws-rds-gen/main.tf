@@ -4,7 +4,7 @@ resource "aws_db_instance" "default" {
   engine               = "${var.engine}"
   engine_version       = "${var.engine_version}"
   instance_class       = "${var.instance_class}"
-  identifier           = "rds-${sandbox_id}"
+  identifier           = "rds-${var.sandbox_id}"
   username             = "${var.username}"
   password             = "${var.password}"
   parameter_group_name = "default.${var.engine}${var.engine_version}"
