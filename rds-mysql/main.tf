@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "eu-west-1"
+}
+
 data "aws_vpc" "default" {
   id = "${var.vpc_id}"
 }
