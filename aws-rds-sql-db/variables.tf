@@ -3,9 +3,9 @@ variable "aws_region" {
   description = "AWS Region"
 }
 
-variable "db_name" {
-  description = "DB Name"
-}
+# variable "db_name" {
+#   description = "DB Name"
+# }
 
 variable "username" {
   default     = "admin"
