@@ -42,7 +42,7 @@ variable "subnet_vnet" {
 }
 
 variable "subnet_resource_group" {
-  description = " Specifies the name of the resource group the Virtual Network is located in"
+  description = "Specifies the name of the resource group the Virtual Network is located in"
 }
 
 
