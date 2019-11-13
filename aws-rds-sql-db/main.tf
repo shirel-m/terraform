@@ -65,4 +65,6 @@ resource "aws_db_instance" "default" {
   backup_retention_period = 0
   license_model           = "license-included"
   db_subnet_group_name    = "${aws_db_subnet_group.subnet_group.id}"
+  skip_final_snapshot     = true
+  final_snapshot_identifier = "Ignore"
 }
