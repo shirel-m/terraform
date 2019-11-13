@@ -23,7 +23,7 @@ data "aws_subnet" "app_subnet_1" {
 }
 
 resource "aws_db_subnet_group" "subnet_group" {
-  name       = "main"
+  name       = "group-${var.sandbox_id}"
   subnet_ids = ["${data.aws_subnet.app_subnet_0.id}", "${data.aws_subnet.app_subnet_1.id}"]
 }
 
