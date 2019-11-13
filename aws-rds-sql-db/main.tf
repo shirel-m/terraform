@@ -36,9 +36,7 @@ resource "aws_security_group" "allow_all_sql" {
     from_port   = 1433
     to_port     = 1433
     protocol    = "tcp"
-    # Please restrict your ingress to only necessary IPs and ports.
-    # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["${data.aws_vpc.sandbox_vpc.cidr_block}"]
   }
 
   egress {
