@@ -14,8 +14,8 @@ resource "azurerm_network_security_rule" "rule" {
   protocol                    = "*"
   source_port_range           = "*"
   destination_port_range      = "*"
-  source_address_prefix       = "*"
-  destination_address_prefix  = "*"
+  source_address_prefix       = "VirtualNetwork"
+  destination_address_prefix  = "VirtualNetwork"
   resource_group_name         = "${var.resource_group}"
   network_security_group_name = "app_shared_security_group"
 }
