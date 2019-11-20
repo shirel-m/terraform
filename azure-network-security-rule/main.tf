@@ -7,8 +7,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_network_security_rule" "rule" {
-  name                        = "denySandboxTraffic"
-  priority                    = 4080
+  name                        = "allowSandboxTraffic"
+  priority                    = 4070
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "*"
