@@ -8,7 +8,7 @@ provider "azurerm" {
 
 resource "azurerm_network_security_rule" "rule" {
   name                        = "allowSandboxTraffic"
-  priority                    = 4070
+  priority                    = 4079
   direction                   = "Inbound"
   access                      = "Allow"
   protocol                    = "*"
