@@ -23,6 +23,6 @@ resource "azurerm_resource_group" "test" {
 }
 
 output "rg_id" {
-  value = "${data.azurerm_resource_group.test.id}"
+  value = "${azurerm_resource_group.test.id}"
 }
 
