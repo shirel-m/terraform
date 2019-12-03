@@ -2,7 +2,7 @@ provider "azurerm" {
   version = "=1.36.0"
 
   use_msi = true
-  subscription_id = "${var.subscription_id}"
+  # subscription_id = "${var.subscription_id}"
 }
 
 variable "subscription_id" {
@@ -23,6 +23,6 @@ resource "azurerm_resource_group" "test" {
 }
 
 output "rg_id" {
-  value = "${data.azurerm_resource_group.test.id}"
+  value = "${azurerm_resource_group.test.id}"
 }
 
