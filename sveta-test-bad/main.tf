@@ -3,6 +3,7 @@ provider "azurerm" {
 
   use_msi = true
   # subscription_id = "${var.subscription_id}"
+  skip_provider_registration = true
 }
 
 variable "subscription_id" {
