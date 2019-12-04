@@ -1,12 +1,5 @@
 provider "azurerm" {
   version = "=1.36.0"
-
-  # use_msi = true
-  # subscription_id = "${var.subscription_id}"
-}
-
-variable "subscription_id" {
-  description = "The Subscription ID which should be used"
 }
 
 variable "rg_name" {
