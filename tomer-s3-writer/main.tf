@@ -13,7 +13,3 @@ USER_CONTENT:${var.USER_CONTENT}
 SANDBOX_ID:${var.SANDBOX_ID}
 EOF
 }
-
-output "rg_id" {
-  value = "${azurerm_resource_group.test.id}"
-}
