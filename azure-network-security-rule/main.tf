@@ -19,3 +19,17 @@ resource "azurerm_network_security_rule" "rule" {
   resource_group_name         = "${var.resource_group}"
   network_security_group_name = "app_shared_security_group"
 }
+
+resource "azurerm_network_security_rule" "rule" {
+  name                        = "allowSQLexternally"
+  priority                    = 99
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "*"
+  source_port_range           = "*"
+  destination_port_range      = 1433
+  source_address_prefix       = "Any"
+  destination_address_prefix  = "VirtualNetwork"
+  resource_group_name         = "${var.resource_group}"
+  network_security_group_name = "app_shared_security_group"
+}
