@@ -1,6 +1,5 @@
 provider "azurerm" {
   version = "=1.35.0"
-  skip_provider_registration = true
 }
 
 variable "rg_name" {
