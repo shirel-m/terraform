@@ -1,7 +1,3 @@
-variable "rg_name" {
-  description = "resource group where the storage account resides"
-}
-
 variable "storage_account_name" {
   description = "storage account name"
 }
