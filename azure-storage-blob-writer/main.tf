@@ -9,3 +9,11 @@ resource "azurerm_storage_blob" "my_blob" {
   type                   = "Block"
   source_content         = "${var.content}"
 }
+
+data "external" "presign" {
+  program = ["bash", "presign.sh", var.storage_account_name, var.storage_container_name, var.blob_name, azurerm_storage_blob.my_blob.url]
+}
+
+output "file_url" {
+  value = data.external.presign.result.url
+}
