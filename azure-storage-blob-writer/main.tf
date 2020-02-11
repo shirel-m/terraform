@@ -11,7 +11,7 @@ resource "azurerm_storage_blob" "my_blob" {
 }
 
 data "external" "presign" {
-  program = ["bash", "presign.sh", var.storage_account_name, var.storage_container_name, var.blob_name, azurerm_storage_blob.my_blob.url]
+  program = ["bash", "presign.sh", var.storage_account_name, var.storage_container_name, var.blob_name]
 }
 
 output "file_url" {
