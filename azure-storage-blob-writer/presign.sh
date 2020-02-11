@@ -26,6 +26,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 az login --identity -u $ARM_CLIENT_ID
 if [[ $? -ne 0 ]]; then
     echo "az login failed" >&2
+    exit 2
 fi
 
 end=`date -u -d "30 minutes" '+%Y-%m-%dT%H:%MZ'`
