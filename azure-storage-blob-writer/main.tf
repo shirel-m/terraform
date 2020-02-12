@@ -23,5 +23,5 @@ data "external" "generate_sas" {
 }
 
 output "file_url" {
-  value = "${azurerm_storage_blob.url}?${data.external.generate_sas.result.serviceSasToken}"
+  value = "${azurerm_storage_blob.my_blob.url}?${data.external.generate_sas.result.serviceSasToken}"
 }
