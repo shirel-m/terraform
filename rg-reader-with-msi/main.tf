@@ -2,6 +2,10 @@ provider "azurerm" {
   version = "=1.35.0"
   # explicitly requiring msi authentication
   use_msi = true
+  subscription_id = "${var.subscription_id}"
+}
+
+variable "subscription_id" {
 }
 
 variable "rg_name" {
