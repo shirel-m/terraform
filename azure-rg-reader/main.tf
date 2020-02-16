@@ -2,9 +2,6 @@ provider "azurerm" {
   version = "=1.35.0"   # the earliest version we support for msi
 }
 
-variable "subscription_id" {
-}
-
 variable "rg_name" {
 }
 
