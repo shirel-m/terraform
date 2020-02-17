@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_storage_blob" "blob_to_create" {
-  name                   = var.blob_name != "" ? var.blob_name : var.SANDBOX_ID
+  name                   = "${var.blob_name}"
   storage_account_name   = "${var.storage_account_name}"
   storage_container_name = "${var.storage_container_name}"
   type                   = "Block"

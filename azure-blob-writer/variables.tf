@@ -5,7 +5,6 @@ variable "storage_container_name" {
 }
 
 variable "blob_name" {
-    default = ""
 }
 
 variable "USER_CONTENT" {
