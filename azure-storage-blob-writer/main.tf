@@ -22,10 +22,10 @@ data "external" "generate_sas" {
   program = [
     "bash",
     "generate_sas.sh", 
-    "${azurerm_storage_blob.blob_to_create.storage_account_name}",
-    "${azurerm_storage_blob.blob_to_create.storage_container_name}", 
-    "${azurerm_storage_blob.blob_to_create.name}", 
-    "${azurerm_storage_blob.blob_to_create.storage_account_name}"
+    "${azurerm_storage_blob.my_blob.storage_account_name}",
+    "${azurerm_storage_blob.my_blob.storage_container_name}", 
+    "${azurerm_storage_blob.my_blob.name}", 
+    "${azurerm_storage_blob.my_blob.storage_account_name}"
     ]
 }
 
