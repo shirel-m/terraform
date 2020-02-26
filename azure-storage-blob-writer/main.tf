@@ -19,7 +19,14 @@ resource "azurerm_storage_blob" "my_blob" {
 # }
 
 data "external" "generate_sas" {
-  program = ["bash", "generate_sas.sh", var.storage_account_name, var.storage_container_name, var.blob_name, var.storage_account_name]
+  program = [
+    "bash",
+    "generate_sas.sh", 
+    "${azurerm_storage_blob.blob_to_create.storage_account_name}",
+    "${azurerm_storage_blob.blob_to_create.storage_container_name}", 
+    "${azurerm_storage_blob.blob_to_create.name}", 
+    "${azurerm_storage_blob.blob_to_create.storage_account_name}"
+    ]
 }
 
 output "file_url" {
