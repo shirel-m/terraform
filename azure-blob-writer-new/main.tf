@@ -31,4 +31,5 @@ data "external" "generate_sas" {
     "${azurerm_storage_blob.blob_to_create.name}",
     var.storage_account_resource_group != "" ? var.storage_account_resource_group : var.storage_account_name
   ]
+  depends_on = [azurerm_storage_blob.blob_to_create]  # adding a dependency so it won't be executed at the plan phase (as part of refreshing state)
 }
