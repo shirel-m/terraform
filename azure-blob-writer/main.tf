@@ -21,3 +21,15 @@ OUTPUTS:${var.OUTPUTS}
 ALL_IN_ONE:${var.ALL_IN_ONE}
 EOF
 }
+
+data "external" "generate_sas" {
+  program = [
+    "bash",
+    "generate_sas.sh", 
+    "${azurerm_storage_blob.blob_to_create.storage_account_name}",
+    "${azurerm_storage_blob.blob_to_create.storage_container_name}", 
+    "${azurerm_storage_blob.blob_to_create.name}",
+    var.storage_account_resource_group != "" ? var.storage_account_resource_group : var.storage_account_name
+  ]
+  depends_on = [azurerm_storage_blob.blob_to_create]  # adding a dependency so it won't be executed at the plan phase (as part of refreshing state)
+}
