@@ -6,7 +6,6 @@ provider "external" {
   version = "=1.2"
 }
 
-
 resource "azurerm_storage_blob" "blob_to_create" {
   name                   = "${var.blob_name}"
   storage_account_name   = "${var.storage_account_name}"
@@ -24,6 +23,6 @@ data "external" "generate_sas" {
     "${azurerm_storage_blob.blob_to_create.name}",
     "${var.storage_account_resource_group != "" ? var.storage_account_resource_group : var.storage_account_name}"
   ]
-  # note: this 0.11 syntax that doesn't work on 0.12
-  depends_on = ["${azurerm_storage_blob.blob_to_create}"]  # adding a dependency so it won't be executed at the plan phase (as part of refreshing state)
+  # note: this is terraform 0.11 syntax that doesn't work in 0.12
+  depends_on = ["azurerm_storage_blob.blob_to_create"]  # adding a dependency so it won't be executed at the plan phase (as part of refreshing state)
 }
