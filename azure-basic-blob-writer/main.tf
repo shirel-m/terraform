@@ -3,7 +3,7 @@ provider "azurerm" {
 }
 
 provider "external" {
-  version = "=1.12"
+  version = "=1.2"
 }
 
 
