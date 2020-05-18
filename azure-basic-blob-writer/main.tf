@@ -21,7 +21,7 @@ data "external" "generate_sas" {
     "${azurerm_storage_blob.blob_to_create.storage_account_name}",
     "${azurerm_storage_blob.blob_to_create.storage_container_name}", 
     "${azurerm_storage_blob.blob_to_create.name}",
-    "${var.storage_account_resource_group != "" ? var.storage_account_resource_group : var.storage_account_name}"
+    "${var.storage_account_resource_group}"
   ]
   # note: this is terraform 0.12 syntax
   depends_on = [azurerm_storage_blob.blob_to_create]  # adding a dependency so it won't be executed at the plan phase (as part of refreshing state)
