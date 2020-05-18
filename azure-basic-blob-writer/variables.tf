@@ -1,5 +1,4 @@
 variable "storage_account_resource_group" {
-    default = ""
 }
 
 variable "storage_account_name" {
