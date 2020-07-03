@@ -16,9 +16,9 @@ variable "SANDBOX_ID" {
 
 # =======================================================================
 
-provider "azurerm" {
-  version = "=1.35.0"   # the earliest version we support for msi
-}
+# provider "azurerm" {
+#   version = "=1.35.0"   # the earliest version we support for msi
+# }
 
 provider "aws" {
   region = "eu-west-1"
@@ -30,10 +30,10 @@ provider "aws" {
 
 # create a resource group on azure
 
-resource "azurerm_resource_group" "rg" {
-  name = "${var.RG_NAME}"
-  location = "West Europe"
-}
+# resource "azurerm_resource_group" "rg" {
+#   name = "${var.RG_NAME}"
+#   location = "West Europe"
+# }
 
 # create a file in bucket it aws
 
@@ -50,5 +50,6 @@ EOF
 # =======================================================================
 
 output "RG_ID" {
-  value = "${azurerm_resource_group.rg.id}"
+  #value = "${azurerm_resource_group.rg.id}"
+  value = "koko"
 }
