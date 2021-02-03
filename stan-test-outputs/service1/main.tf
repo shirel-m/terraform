@@ -24,3 +24,7 @@ resource "aws_subnet" "subnet" {
 output "subnet_arn" {
     value = aws_subnet.subnet.arn
 }
+
+output "test_value" {
+  value = "some\\value"
+}
