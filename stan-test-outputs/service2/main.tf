@@ -9,17 +9,53 @@ variable "subnet_arn" {
 
 variable "test_value" {
   type = string
-  description = "Some value"
+  description = "Value with \\"
+}
+
+variable "test_value2" {
+  type = string
+  description = "Value with &"
+}
+
+variable "test_value3" {
+  type = string
+  description = "Value with _"
+}
+
+variable "test_value4" {
+  type = string
+  description = "Value with ^"
+}
+
+variable "multi_line" {
+  type = string
+  description = "Multi-line value"
 }
 
 data "aws_arn" "subnet_arn" {
   arn = var.subnet_arn
 }
 
-output "name" {
+output "input_subnet_arn" {
   value = data.aws_arn.subnet_arn
 }
 
 output "input_value" {
   value = var.test_value
+}
+
+output "input_value2" {
+  value = var.test_value2
+}
+
+output "input_value3" {
+  value = var.test_value3
+}
+
+output "input_value4" {
+  value = var.test_value4
+}
+
+output "input_multiline" {
+  value = var.multi_line
 }

@@ -22,9 +22,29 @@ resource "aws_subnet" "subnet" {
 }
 
 output "subnet_arn" {
-    value = aws_subnet.subnet.arn
+  value = aws_subnet.subnet.arn
 }
 
 output "test_value" {
   value = "some\\value"
+}
+
+output "test_value2" {
+  value = "test&test"
+}
+
+output "test_value3" {
+  value = "test_val3"
+}
+
+output "test_value4" {
+  value = "test^val4"
+}
+
+output "multi_line" {
+  value = <<EOF
+line 1
+line 2
+line 3
+EOF
 }
