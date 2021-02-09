@@ -27,11 +27,6 @@ variable "test_value4" {
   description = "Value with ^"
 }
 
-variable "multi_line" {
-  type = string
-  description = "Multi-line value"
-}
-
 data "aws_arn" "subnet_arn" {
   arn = var.subnet_arn
 }
@@ -56,6 +51,3 @@ output "input_value4" {
   value = var.test_value4
 }
 
-output "input_multiline" {
-  value = var.multi_line
-}
