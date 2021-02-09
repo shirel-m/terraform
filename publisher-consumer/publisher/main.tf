@@ -25,7 +25,7 @@ output "subnet_arn" {
   value = aws_subnet.subnet.arn
 }
 
-output "test_value" {
+output "test_value1" {
   value = "some\\value"
 }
 
