@@ -40,11 +40,3 @@ output "test_value3" {
 output "test_value4" {
   value = "test^val4"
 }
-
-output "multi_line" {
-  value = <<EOF
-line 1
-line 2
-line 3
-EOF
-}
