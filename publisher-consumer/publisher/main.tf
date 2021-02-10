@@ -26,7 +26,7 @@ output "subnet_arn" {
 }
 
 output "test_value1" {
-  value = "some\\value"
+  value = "somevalue"
 }
 
 output "test_value2" {
