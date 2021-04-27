@@ -1,6 +1,12 @@
 variable "BUCKET_NAME" {
 }
 
+variable "AWS_ACCESS_KEY" {
+}
+
+variable "AWS_SECRET_ACCESS" {
+}
+
 variable "USER_CONTENT" {
 }
 
@@ -10,13 +16,17 @@ variable "SERVER_NAME" {
 variable "SERVER_VERSION" {
 }
 
+# obsolete - replaced by OUTPUTS_PUBLISHER_STR_OLD
 variable "OUTPUT_PUBLISHER_STR" {
 }
 
-variable "AWS_ACCESS_KEY" {
+variable "OUTPUTS_PUBLISHER_STR_OLD" {
 }
 
-variable "AWS_SECRET_ACCESS" {
+variable "OUTPUTS_PUBLISHER_STR" {
+}
+
+variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
 variable "VIRTUAL_NETWORK_ID" {
