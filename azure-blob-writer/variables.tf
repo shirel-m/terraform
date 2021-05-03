@@ -28,13 +28,22 @@ variable "OUTPUTS_PUBLISHER_STR" {
 variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
+variable "VIRTUAL_NETWORK_ID_NEW" {
+}
+
 variable "VIRTUAL_NETWORK_ID" {
+}
+
+variable "PUBLIC_ADDRESS_NEW" {
 }
 
 variable "PUBLIC_ADDRESS" {
 }
 
 variable "PUBLIC_ADDRESS_OLD" {
+}
+
+variable "SANDBOX_ID_NEW" {
 }
 
 variable "SANDBOX_ID" {
