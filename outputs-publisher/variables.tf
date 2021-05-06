@@ -34,17 +34,17 @@ variable "obj" {
 }
 
 variable "num" {
-  type = "number"
+  type = number
   default = 5
 }
 
 variable "fraction" {
-  type = "number"
+  type = number
   default = 0.001
 }
 
 variable "boolen" {
-  type = "bool"
+  type = bool
   default = true
 }
 
