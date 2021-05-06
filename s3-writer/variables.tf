@@ -27,7 +27,7 @@ variable "OUTPUTS_PUBLISHER_STR" {
 variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
-variable 'OUTPUTS_PUBLISHER_OBJ' {
+variable "OUTPUTS_PUBLISHER_OBJ" {
     type = object({
       age = number
       name = string
@@ -36,24 +36,24 @@ variable 'OUTPUTS_PUBLISHER_OBJ' {
    })
 }
 
-variable 'OUTPUTS_PUBLISHER_MAP' {
+variable "OUTPUTS_PUBLISHER_MAP" {
     type = "map"
 }
 
-variable 'OUTPUTS_PUBLISHER_LIST' {
-    type = "map"
+variable "OUTPUTS_PUBLISHER_LIST" {
+    type = "list"
 }
 
-variable 'OUTPUTS_PUBLISHER_NUMBER' {
-    type = "number"
+variable "OUTPUTS_PUBLISHER_NUMBER" {
+    type = number
 }
 
-variable 'OUTPUTS_PUBLISHER_FRACTION' {
-    type = "number"
+variable "OUTPUTS_PUBLISHER_FRACTION" {
+    type = number
 }
 
-variable 'OUTPUTS_PUBLISHER_BOOL' {
-    type = "bool"
+variable "OUTPUTS_PUBLISHER_BOOL" {
+    type = bool
 }
 
 variable "VIRTUAL_NETWORK_ID_NEW" {
