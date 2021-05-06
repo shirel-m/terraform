@@ -28,7 +28,12 @@ variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
 variable 'OUTPUTS_PUBLISHER_OBJ' {
-    type = "map"
+    type = object({
+      age = number
+      name = string
+      user = list(map(string))
+      data = string
+   })
 }
 
 variable 'OUTPUTS_PUBLISHER_MAP' {
