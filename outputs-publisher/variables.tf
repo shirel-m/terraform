@@ -48,7 +48,7 @@ variable "fraction" {
   default = 0.001
 }
 
-variable "boolen" {
+variable "boolean" {
   type = bool
   default = true
 }
