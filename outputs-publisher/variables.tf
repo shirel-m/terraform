@@ -18,7 +18,12 @@ variable "map" {
 }
 
 variable "obj" {
-  type = "map"
+  type = object({
+    age = number
+    name = string
+    user = map
+    data = string
+  })
   default = {
     "age" = 52,
     "name" = "John",
