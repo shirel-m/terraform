@@ -18,14 +18,14 @@ output "special_chars_str" {
   value = "some::text:with-chars-4&more/chars_123^value"
 }
 
-output "number" {
-  value = ${var.number}
+output "num" {
+  value = "${var.num}"
 }
 
 output "fraction" {
-  value = ${var.fraction}
+  value = "${var.fraction}"
 }
 
-output "bool" {
-  value = ${var.bool}
+output "boolean" {
+  value = "${var.boolean}"
 }

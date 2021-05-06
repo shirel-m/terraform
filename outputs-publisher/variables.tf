@@ -33,7 +33,7 @@ variable "obj" {
   }           
 }
 
-variable "number" {
+variable "num" {
   type = "number"
   default = 5
 }
@@ -43,7 +43,7 @@ variable "fraction" {
   default = 0.001
 }
 
-variable "bool" {
+variable "boolen" {
   type = "bool"
   default = true
 }
