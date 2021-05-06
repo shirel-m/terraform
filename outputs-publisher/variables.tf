@@ -32,3 +32,19 @@ variable "obj" {
     "data" = "/!@#$@#%#$^!!~///!~\"!@#$!#~~~//##\\$\\#$%^&*(&*()sa\\df\nAFSDRFQW1'2''3'''4''''SDFSDF\\sdfrt\\\tt{}|||'''''df'"
   }           
 }
+
+variable "number" {
+  type = "number"
+  default = 5
+}
+
+variable "fraction" {
+  type = "number"
+  default = 0.001
+}
+
+variable "bool" {
+  type = "bool"
+  default = true
+}
+
