@@ -67,6 +67,12 @@ variable "LITERAL_PARAMETER" {
 variable "AWS_SSM_PARAMETER" {
 }
 
+variable "LITERAL_PARAMETER" {
+}
+
+variable "AWS_SSM_PARAMETER" {
+}
+
 variable "OUTPUTS" {
 }
 
