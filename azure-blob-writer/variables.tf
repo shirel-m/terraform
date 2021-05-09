@@ -58,3 +58,6 @@ variable "OUTPUTS" {
 variable "ALL_IN_ONE" {
 }
 
+variable "LITERAL_PARAMETER" {
+}
+
