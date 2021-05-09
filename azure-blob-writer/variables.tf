@@ -29,15 +29,15 @@ variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
 variable "OUTPUTS_PUBLISHER_NUMBER" {
-    type = "number"
+    type = number
 }
 
 variable "OUTPUTS_PUBLISHER_FRACTION" {
-    type = "number"
+    type = number
 }
 
 variable "OUTPUTS_PUBLISHER_BOOL" {
-    type = "bool"
+    type = bool
 }
 
 variable "VIRTUAL_NETWORK_ID_NEW" {
