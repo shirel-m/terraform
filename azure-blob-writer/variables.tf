@@ -28,15 +28,15 @@ variable "OUTPUTS_PUBLISHER_STR" {
 variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
-variable 'OUTPUTS_PUBLISHER_NUMBER' {
+variable "OUTPUTS_PUBLISHER_NUMBER" {
     type = "number"
 }
 
-variable 'OUTPUTS_PUBLISHER_FRACTION' {
+variable "OUTPUTS_PUBLISHER_FRACTION" {
     type = "number"
 }
 
-variable 'OUTPUTS_PUBLISHER_BOOL' {
+variable "OUTPUTS_PUBLISHER_BOOL" {
     type = "bool"
 }
 
