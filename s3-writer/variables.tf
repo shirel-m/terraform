@@ -49,6 +49,12 @@ variable "SANDBOX_ID" {
 variable "SANDBOX_ID_OLD" {
 }
 
+variable "LITERAL_PARAMETER" {
+}
+
+variable "AWS_SSM_PARAMETER" {
+}
+
 variable "OUTPUTS" {
 }
 
