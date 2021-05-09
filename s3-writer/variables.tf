@@ -17,31 +17,12 @@ variable "SERVER_VERSION" {
 }
 
 variable "OUTPUTS_PUBLISHER_STR_OLD" {
-    type = "string"
 }
 
 variable "OUTPUTS_PUBLISHER_STR" {
-    type = "string"
 }
 
 variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
-}
-
-variable "OUTPUTS_PUBLISHER_OBJ" {
-    type = object({
-      age = number
-      name = string
-      user = list(map(string))
-      data = string
-   })
-}
-
-variable "OUTPUTS_PUBLISHER_MAP" {
-    type = "map"
-}
-
-variable "OUTPUTS_PUBLISHER_LIST" {
-    type = "list"
 }
 
 variable "OUTPUTS_PUBLISHER_NUMBER" {
@@ -80,9 +61,14 @@ variable "SANDBOX_ID" {
 variable "SANDBOX_ID_OLD" {
 }
 
+variable "LITERAL_PARAMETER" {
+}
+
+variable "AWS_SSM_PARAMETER" {
+}
+
 variable "OUTPUTS" {
 }
 
 variable "ALL_IN_ONE" {
 }
-
