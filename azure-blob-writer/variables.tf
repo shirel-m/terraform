@@ -28,23 +28,6 @@ variable "OUTPUTS_PUBLISHER_STR" {
 variable "OUTPUTS_PUBLISHER_SPECIAL_CHARS_STR" {
 }
 
-variable 'OUTPUTS_PUBLISHER_OBJ' {
-    type = object({
-      age = number
-      name = string
-      user = list(map(string))
-      data = string
-   })
-}
-
-variable 'OUTPUTS_PUBLISHER_MAP' {
-    type = "map"
-}
-
-variable 'OUTPUTS_PUBLISHER_LIST' {
-    type = "map"
-}
-
 variable 'OUTPUTS_PUBLISHER_NUMBER' {
     type = "number"
 }
@@ -86,4 +69,8 @@ variable "OUTPUTS" {
 
 variable "ALL_IN_ONE" {
 }
+
+variable "LITERAL_PARAMETER" {
+}
+
 
