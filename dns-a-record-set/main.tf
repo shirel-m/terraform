@@ -13,7 +13,7 @@ variable "SANDBOX_PUBLIC_ADDRESS" {
 provider "aws" {
   region = "eu-west-1"
   assume_role {
-    role_arn     = "arn:aws:iam::513341655526:role/colony/7ee79e8a-785b-ef52-11a1-17ef95ee3344/colony-power-user-role-7ee79e8a-785b-ef52-11a1-17ef95ee3344"
+    role_arn     = "arn:aws:iam::513341655526:role/colony/7ee79e8a-785b-ef52-11a1-17ef95ee3344/colony-services-access-role-7ee79e8a-785b-ef52-11a1-17ef95ee3344"
     session_name = "DNS_SET_A_RECORD_SESSION"
   }
 }
