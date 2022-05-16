@@ -18,17 +18,22 @@ variable "map" {
 }
 
 variable "obj" {
-  type = map
+  type = object({
+    age = number
+    name = string
+    user = list(map)
+    data = string
+  })
   default = {
-    "age" = 52,
-    "name" = "John",
-    "user" = [
+    age = 52,
+    name = "John",
+    user = [
       {
         "user-a" = "a-topic",
         "user-b" = "c-topic",
         "user-c" = "c-topic"
       }
     ],
-    "data" = "/!@#$@#%#$^!!~///!~\"!@#$!#~~~//##\\$\\#$%^&*(&*()sa\\df\nAFSDRFQW1'2''3'''4''''SDFSDF\\sdfrt\\\tt{}|||'''''df'"
+    data = "/!@#$@#%#$^!!~///!~\"!@#$!#~~~//##\\$\\#$%^&*(&*()sa\\df\nAFSDRFQW1'2''3'''4''''SDFSDF\\sdfrt\\\tt{}|||'''''df'"
   }           
 }
