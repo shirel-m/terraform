@@ -21,7 +21,7 @@ variable "obj" {
   type = object({
     age = number
     name = string
-    user = list(map)
+    user = list(map(string))
     data = string
   })
   default = {
